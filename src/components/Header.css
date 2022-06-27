@@ -1,10 +1,6 @@
 .header{
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     background-color: black;
     color: white;
+    margin-bottom: -16px;
     
 }

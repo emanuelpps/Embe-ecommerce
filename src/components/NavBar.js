@@ -1,15 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import './NavBar.css';
-import image from "./../img/Embe_logo.png";
 import CartWidget from './CartWidget';
-import Logo from './Logo';
+import logo from '../assets/img/Embe_logo.png'
 
 function NavBar() {
   return (
     <nav class="navbar sticky-top navbar-expand-lg">
-      <div class="container-fluid">
-        <Logo />
+      <div class="container">
+        <img src={logo} className="logo"/>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,9 +33,9 @@ function NavBar() {
             <li class="nav-item">
               <a class="nav-link">Contacto</a>
             </li>
-          </ul>
-            <CartWidget/>        
+          </ul>        
       </div>
+      <CartWidget/>
     </div>
 </nav>
   );

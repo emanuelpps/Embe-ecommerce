@@ -1,8 +1,7 @@
 .navbar{
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     background-color: #e6c2a8;
+}
+
+.logo{
+    width: 3vw;
 }
