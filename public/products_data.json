@@ -1,0 +1,105 @@
+[
+    {
+        "id":1,
+        "name":"ALMOHADON FLECOS",
+        "category":"Living",
+        "price":"3500",
+        "details":null,
+        "img": "./img/ALMOHADON-FLECOS.jpg"
+    },
+{
+    "id":2,
+    "name":"ALMOHADON SIMPLE IS BEAUTIFUL",
+    "category":"Living",
+    "price":"3800",
+    "details":null,
+    "img": "./img/ALMOHADON-SIMPLE-IS-BEAUTIFUL.jpg"
+},
+{
+    "id":3,
+    "name":"ALMOHADON TUSOR GRIS OSCURO GRUESO",
+    "category":"Living",
+    "price":"2900",
+    "details":null,
+    "img": "./img/ALMOHADON-TUSOR-GRIS-OSCURO-GRUESO.jpg"
+},
+{
+    "id":4,
+    "name":"BANDEJA DE CAMA",
+    "category":"Cuarto",
+    "price":"4300",
+    "details":null,
+    "img": "./img/BANDEJA-DE-CAMA.jpg"
+},
+{
+    "id":5,
+    "name":"CANASTO JACINTO RECTANGULAR",
+    "category":"Cuaerto",
+    "price":"4500",
+    "details":null,
+    "img": "./img/CANASTO-JACINTO-RECTANGULAR.jpg"
+},
+{
+    "id":6,
+    "name":"DIFUSOR AMBIENTAL HOME COLLECTION",
+    "category":"Living",
+    "price":"2500",
+    "details":null,
+    "img": "./img/DIFUSOR-AMBIENTAL-HOME-COLLECTION.jpg"
+},
+{
+    "id":7,
+    "name":"DISPENSER SIMIL CEMENTO",
+    "category":"Living",
+    "price":"3500",
+    "details":null,
+    "img": "./img/DISPENSER-SIMIL-CEMENTO.jpg"
+},
+{
+    "id":8,
+    "name":"INDIVIDUAL RAYAS",
+    "category":"Cocina",
+    "price":"2500",
+    "details":null,
+    "img": "./img/INDIVIDUAL-RAYAS.jpg"
+},
+{
+    "id":9,
+    "name":"MANTA SIMIL PIEL RABBIT NEW",
+    "category":"Cocina",
+    "price":"8200",
+    "details":null,
+    "img": "./img/MANTA-SIMIL-PIEL-RABBIT-NEW.jpg"
+},
+{
+    "id":10,
+    "name":"PANERA TUSOR RAYAS GRIS",
+    "category":"Cocina",
+    "price":"2400",
+    "details":null,
+    "img": "./img/PANERA-TUSOR-RAYAS-GRIS.jpg"
+},
+{
+    "id":11,
+    "name":"PORTACEPILLO SIMIL CEMENTO",
+    "category":"Baño",
+    "price":"3400",
+    "details":null,
+    "img": "./img/PORTACEPILLO-SIMIL-CEMENTO.jpg"
+},
+{
+    "id":12,
+    "name":"SET DE TOALLAS LOLLIPOP",
+    "category":"Baño",
+    "price":"4500",
+    "details":null,
+    "img": "./img/SET-DE-TOALLAS-LOLLIPOP.jpg"
+},
+{
+    "id":13,
+    "name":"VELA CUENCO",
+    "category":"Baño",
+    "price":"6300",
+    "details":null,
+    "img": "./img/VELA-CUENCO.jpg"
+}]
