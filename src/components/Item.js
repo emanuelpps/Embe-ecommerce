@@ -6,9 +6,11 @@ function Item() {
     const[info,setInfo] = useState([])
 
     useEffect(()=>{
+        setTimeout(() => {
         fetch('products_data.json')
         .then((resp) => resp.json())
         .then((data) => setInfo(data))
+        }, 2000)
     },[])
   
 

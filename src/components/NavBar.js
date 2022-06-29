@@ -2,13 +2,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './NavBar.css';
 import CartWidget from './CartWidget';
-import logo from '../assets/img/Embe_logo.png'
 
 function NavBar() {
   return (
     <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container">
-        <img src={logo} className="logo"/>
+        <img src="./img/Embe_logo.png" className="logo"/>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
