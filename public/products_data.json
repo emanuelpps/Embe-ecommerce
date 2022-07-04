@@ -1,4 +1,4 @@
-const productData = [
+ [
     {
         "id":1,
         "name":"ALMOHADON FLECOS",
@@ -102,7 +102,5 @@ const productData = [
     "price":"6300",
     "details":null,
     "img": "./img/VELA-CUENCO.jpg"
-},
+}
 ]
-
-export default productData;
