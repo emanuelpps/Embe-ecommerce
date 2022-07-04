@@ -1,15 +1,17 @@
 
-import Body from './components/Body';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 /*import ItemCount from './components/ItemCount';*/
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import { ItemDetailContainer } from 'components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from 'components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <NavBar/>
-      <Body/>
+      <ItemDetailContainer/>
+      <ItemListContainer/>
     </div>
   );
 }

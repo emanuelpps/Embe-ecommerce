@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import './CartWidget.css';
-import './ItemCount';
+import '../ItemCount/ItemCount';
 
 function CartWidget() {
 
