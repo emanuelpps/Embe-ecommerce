@@ -8,7 +8,7 @@ export const data = [
         img: '/img/ALMOHADON-FLECOS.jpg',
     },
 {
-    id:2,
+    id:'2',
     name:'ALMOHADON SIMPLE IS BEAUTIFUL',
     category:'Living',
     price:3800,
@@ -16,7 +16,7 @@ export const data = [
     img: '/img/ALMOHADON-SIMPLE-IS-BEAUTIFUL.jpg',
 },
 {
-    id:3,
+    id:'3',
     name:'ALMOHADON TUSOR GRIS OSCURO GRUESO',
     category:'Living',
     price:2900,
@@ -24,7 +24,7 @@ export const data = [
     img: '/img/ALMOHADON-TUSOR-GRIS-OSCURO-GRUESO.jpg',
 },
 {
-    id:4,
+    id:'4',
     name:'BANDEJA DE CAMA',
     category:'Cuarto',
     price:4300,
@@ -32,7 +32,7 @@ export const data = [
     img: '/img/BANDEJA-DE-CAMA.jpg',
 },
 {
-    id:5,
+    id:'5',
     name:'CANASTO JACINTO RECTANGULAR',
     category:'Cuarto',
     price:4500,
@@ -40,7 +40,7 @@ export const data = [
     img: '/img/CANASTO-JACINTO-RECTANGULAR.jpg',
 },
 {
-    id:6,
+    id:'6',
     name:'DIFUSOR AMBIENTAL HOME COLLECTION',
     category:'Living',
     price:2500,
@@ -48,7 +48,7 @@ export const data = [
     img: '/img/DIFUSOR-AMBIENTAL-HOME-COLLECTION.jpg',
 },
 {
-    id:7,
+    id:'7',
     name:'DISPENSER SIMIL CEMENTO',
     category:'Living',
     price:3500,
@@ -56,7 +56,7 @@ export const data = [
     img: '/img/DISPENSER-SIMIL-CEMENTO.jpg',
 },
 {
-    id:8,
+    id:'8',
     name:'INDIVIDUAL RAYAS',
     category:'Cocina',
     price:2500,
@@ -64,7 +64,7 @@ export const data = [
     img: '/img/INDIVIDUAL-RAYAS.jpg',
 },
 {
-    id:9,
+    id:'9',
     name:'MANTA SIMIL PIEL RABBIT NEW',
     category:'Cocina',
     price:8200,
@@ -72,7 +72,7 @@ export const data = [
     img: '/img/MANTA-SIMIL-PIEL-RABBIT-NEW.jpg',
 },
 {
-    id:10,
+    id:'10',
     name:'PANERA TUSOR RAYAS GRIS',
     category:'Cocina',
     price:2400,
@@ -80,7 +80,7 @@ export const data = [
     img: '/img/PANERA-TUSOR-RAYAS-GRIS.jpg'
 },
 {
-    id:11,
+    id:'11',
     name:'PORTACEPILLO SIMIL CEMENTO',
     category:'Bano',
     price:3400,
@@ -88,7 +88,7 @@ export const data = [
     img: '/img/PORTACEPILLO-SIMIL-CEMENTO.jpg',
 },
 {
-    id:12,
+    id:'12',
     name:'SET DE TOALLAS LOLLIPOP',
     category:'Bano',
     price:4500,
@@ -96,12 +96,36 @@ export const data = [
     img: '/img/SET-DE-TOALLAS-LOLLIPOP.jpg',
 },
 {
-    id:13,
+    id:'13',
     name:'VELA CUENCO',
     category:'Bano',
     price:6300,
     details:'Vela de soja natural, en cuenco de madera.Disponible en fragancia peonia y fragancia jengibre.Medidas: 5 cm de alto x Ø 10 cm.',
     img: '/img/VELA-CUENCO.jpg',
+},
+{
+    id:'14',
+    name:'PANERA TEJIDA YUTE',
+    category:'Cocina',
+    price:2300,
+    details:'Panera de yute, diseño artesanal tejido.',
+    img: '/img/PANERA-TEJIDA-YUTE.jpg',
+},
+{
+    id:'15',
+    name:'MANTEL TUSOR LISO',
+    category:'Cocina',
+    price:9800,
+    details:'Mantel confeccionado en tusor 100% algodón.Medidas 1,40 X 2,00 Y 1,60 X 2,90',
+    img: '/img/MANTEL-TUSOR-LISO.jpg',
+},
+{
+    id:'16',
+    name:'EDREDON ANTIBACTERIAL',
+    category:'Cuarto',
+    price:29500,
+    details:'Edredón sintético de fibra siliconada premium.La tela que lo recubre es 100% algodón egipcio antibacterial de 400 hilos.RECOMENDAMOS USARLO CON UNA FUNDA DE EDREDÓN PARA SU PROTECCIÓN.Twin: para colchones de hasta 1 x 2 mts.Queen: para colchones de hasta 1,60 x 2 mts.King: para camas de hasta 2 x 2 mts.Recordá revisar la Guía de Tamaños para elegir la medida adecuada',
+    img: '/img/EDREDON-ANTIBACTERIAL.jpg',
 },
 ];
 

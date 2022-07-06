@@ -14,7 +14,7 @@ export const ItemDetailContainer = () => {
     setLoading(true);
     const getItems = new Promise((resolve) => {
       setTimeout(() => {
-        const myData = productData.find((item) => item.id === 5);
+        const myData = productData.find((item) => item.id === itemId);
 
         resolve(myData);
       }, 1000);
