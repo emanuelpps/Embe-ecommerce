@@ -1,23 +1,18 @@
-import './ItemList.css';
-import Item from '../Item/Item';
+import React from 'react';
+import {Item} from '../Item/Item';
 
 
 
-function ItemList(props){
+export const ItemList = ({items}) =>{
 
 return (
     
     <section className="row row-cols-1 row-cols-md-3 g-4">
-        {props.Items.map((item) => (
-          <Item
-            img={item.img}
-            name={item.name}
-            price={item.price}
-            detail={item.detail}
-          />
+        {items?.map((item) => (
+          <Item {...item} key={item.id}/>
           ))}
     </section>
   );
-}
+};
 
 export default ItemList;

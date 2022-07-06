@@ -1,31 +1,51 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
 import './ItemListContainer.css';
-import ItemList from '../ItemList/ItemList';
 import { useEffect, useState } from 'react';
+import ItemList from '../ItemList/ItemList';
+import {data}  from '../data/product';
+import {useParams} from 'react-router-dom';
 
-function ItemListContainer() {
+
+export const ItemListContainer = () => {
     
-    const[Item,setItem] = useState([])
+    const[items,setItem] = useState([]);
+
+    const[loading, setLoading] = useState(true);
+
+    const{catId} = useParams();
 
     useEffect(()=>{
-        setTimeout(() => {
-        fetch('products_data.json')
-        .then((resp) => resp.json())
-        .then((data) => setItem(data))
-        }, 2000)
-    },[])
+        setLoading(true);
+        const getItems = new Promise((resolve) => {
+          setTimeout(() => {
+            const info = catId
+            ? data.filter((item) => item.category === catId)
+            : data;
 
-return (
+            resolve (info);
+          }, 1000);
+        });
+
+
+        getItems
+        .then((res) => {
+          setItem(res);
+        })
+        .finally(() => setLoading(false));
+      }, [catId]);
+
+return loading ? (
+  <div class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+) : (
     <section className='text-center'>
-        <h1>EMBÉ <br/> Home + Deco</h1>
         <h3>Catalogo de Productos</h3>
         <article>
-          <ItemList Items= {Item}/>
+          <ItemList items= {items}/>
         </article>
     </section>
     
   );
-}
-
-export default ItemListContainer;
+};

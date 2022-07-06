@@ -3,7 +3,7 @@ import { useState } from "react";
 import Swal from 'sweetalert2'
 
 
-function ItemCount({ stock }) {
+export const ItemCount = ({ stock }) => {
     
     const [num, setNum] = useState(0);
 
