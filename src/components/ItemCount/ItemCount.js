@@ -54,12 +54,12 @@ let stock = 3;
     <div class="row">
            <div>
               <p>{num}</p>
-              <button type="button" class="btn btn-primary flex-fill ms-1" onClick={clickSuma} disabled={num === stock ? true : null}>{""}+{""}</button>
+              <button type="button" class="btn btn-primary flex-fill ms-1" onClick={clickSuma} disabled={num === stock ? true : null}>+</button>
               <button type="button" class="btn btn-danger flex-fill ms-1" onClick={clickResta}>-</button>
               <button type="button" class="btn btn-warning flex-fill ms-1" data-mdb-ripple-color="dark" onClick={reset}>Reset</button>
             </div>
             <div>
-            <button type="button" className='btn btn-primary mt-3' onClick={() => onAdd (num)}>{""}Agregar Al Carrito{""}</button>
+            <button type="button" className='btn btn-primary mt-3' onClick={() => onAdd (num)}>Agregar Al Carrito</button>
             </div>
           </div>
         </div>
