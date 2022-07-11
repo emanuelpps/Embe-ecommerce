@@ -6,6 +6,7 @@ export const data = [
         price:3500,
         details:'Almohadón de 30 x 50 cms con detalle de flecos con relleno.',
         img: '/img/ALMOHADON-FLECOS.jpg',
+        stock:3,
     },
 {
     id:'2',
@@ -14,6 +15,7 @@ export const data = [
     price:3800,
     details:'Almohadón con frase y relleno.Medidas: 50 x 30 cms.',
     img: '/img/ALMOHADON-SIMPLE-IS-BEAUTIFUL.jpg',
+    stock:2,
 },
 {
     id:'3',
@@ -22,6 +24,7 @@ export const data = [
     price:2900,
     details:'Almohadón de tusor composicion 100% algodon de 57 x 40 cms con relleno.Funda lavable.',
     img: '/img/ALMOHADON-TUSOR-GRIS-OSCURO-GRUESO.jpg',
+    stock:2,
 },
 {
     id:'4',
@@ -30,6 +33,7 @@ export const data = [
     price:4300,
     details:'Bandeja de madera pintada plegable, con manijas. Es rebatible, ideal para leer en la cama!Medidas: 50 x 35 cm, patas de 19 cm de alto.',
     img: '/img/BANDEJA-DE-CAMA.jpg',
+    stock:2,
 },
 {
     id:'5',
@@ -38,6 +42,7 @@ export const data = [
     price:4500,
     details:'Canasto rectangular para complementar tus espacios preferidos.Se venden por unidad.Los canastos se venden por unidad.Medidas Chico: 29 (largo) x 19 (ancho) x 14 (alto) cms.Medidas Mediano: 35 (largo) x 24 (ancho) x 16 (alto) cms.Medidas Grande: 40 (largo) x 30 (ancho) x 19 (alto) cms.',
     img: '/img/CANASTO-JACINTO-RECTANGULAR.jpg',
+    stock:5,
 },
 {
     id:'6',
@@ -46,6 +51,7 @@ export const data = [
     price:2500,
     details:'Difusor ambiental de 2O0 mls con varas bambú cuyos microcapilares distribuyen la fragancia hasta el exterior para que el perfume comience a desprenderse. Un difusor logra aromatizar de forma permanente ambientes de 15/20 mts2. Duración estimada de dos a tres meses.',
     img: '/img/DIFUSOR-AMBIENTAL-HOME-COLLECTION.jpg',
+    stock:3,
 },
 {
     id:'7',
@@ -54,6 +60,7 @@ export const data = [
     price:3500,
     details:'Dispenser de jabón líquido diseñado en simil cemento combinado con detalle en color dorado.Medidas: 19 cm (alto) x Ø 7,5 cm.Combinalo con el set Simil Cemento!',
     img: '/img/DISPENSER-SIMIL-CEMENTO.jpg',
+    stock:4,
 },
 {
     id:'8',
@@ -62,6 +69,7 @@ export const data = [
     price:2500,
     details:'Individual de PVC.Medidas: 30 cm x 45 cm.',
     img: '/img/INDIVIDUAL-RAYAS.jpg',
+    stock:2,
 },
 {
     id:'9',
@@ -70,6 +78,7 @@ export const data = [
     price:8200,
     details:'Manta simil piel de conejo sintética.100% Polyester.Medidas: 1,50 x 2 mts.Ideal para utilizar como pie de cama!',
     img: '/img/MANTA-SIMIL-PIEL-RABBIT-NEW.jpg',
+    stock:5,
 },
 {
     id:'10',
@@ -77,7 +86,8 @@ export const data = [
     category:'Cocina',
     price:2400,
     details:'Panera confeccionada en tusor combinada.Medidas: 18 cm de diámetro x 15 cm de alto.',
-    img: '/img/PANERA-TUSOR-RAYAS-GRIS.jpg'
+    img: '/img/PANERA-TUSOR-RAYAS-GRIS.jpg',
+    stock:2,
 },
 {
     id:'11',
@@ -86,6 +96,7 @@ export const data = [
     price:3400,
     details:'Vaso portacepillo diseñado en simil cemento combinado con detalle en color dorado.Medidas: 12 cm (alto) x Ø 7,5 cm.Combinalo con el set Simil Cemento!',
     img: '/img/PORTACEPILLO-SIMIL-CEMENTO.jpg',
+    stock:2,
 },
 {
     id:'12',
@@ -94,6 +105,7 @@ export const data = [
     price:4500,
     details:'Juego de toalla de cara y toallón, confeccionado en 100% algodón de 440 g/m2 en jacquard de velour.Garantía de absorción y durabilidad. Prelavado y preencogido.Medidas:Toalla cara: 48 x 80 cm.Toallón: 70 x 135 cm',
     img: '/img/SET-DE-TOALLAS-LOLLIPOP.jpg',
+    stock:5,
 },
 {
     id:'13',
@@ -102,6 +114,7 @@ export const data = [
     price:6300,
     details:'Vela de soja natural, en cuenco de madera.Disponible en fragancia peonia y fragancia jengibre.Medidas: 5 cm de alto x Ø 10 cm.',
     img: '/img/VELA-CUENCO.jpg',
+    stock:3,
 },
 {
     id:'14',
@@ -110,6 +123,7 @@ export const data = [
     price:2300,
     details:'Panera de yute, diseño artesanal tejido.',
     img: '/img/PANERA-TEJIDA-YUTE.jpg',
+    stock:4,
 },
 {
     id:'15',
@@ -118,6 +132,7 @@ export const data = [
     price:9800,
     details:'Mantel confeccionado en tusor 100% algodón.Medidas 1,40 X 2,00 Y 1,60 X 2,90',
     img: '/img/MANTEL-TUSOR-LISO.jpg',
+    stock:2,
 },
 {
     id:'16',
@@ -126,6 +141,7 @@ export const data = [
     price:29500,
     details:'Edredón sintético de fibra siliconada premium.La tela que lo recubre es 100% algodón egipcio antibacterial de 400 hilos.RECOMENDAMOS USARLO CON UNA FUNDA DE EDREDÓN PARA SU PROTECCIÓN.Twin: para colchones de hasta 1 x 2 mts.Queen: para colchones de hasta 1,60 x 2 mts.King: para camas de hasta 2 x 2 mts.Recordá revisar la Guía de Tamaños para elegir la medida adecuada',
     img: '/img/EDREDON-ANTIBACTERIAL.jpg',
+    stock:5,
 },
 ];
 

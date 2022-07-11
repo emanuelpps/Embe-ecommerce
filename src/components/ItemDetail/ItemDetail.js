@@ -1,13 +1,18 @@
 import '../ItemDetail/ItemDeatail.css';
 import React from 'react';
+import ItemCount from 'components/ItemCount/ItemCount';
+import {Link} from 'react-router-dom';
+import { useState } from 'react';
 
-export const ItemDetail = ({
-    id,
-    name,
-    price,
-    details,
-    img,
-    }) => {
+export const ItemDetail = ({id,name,price,details,img,stock,}) => {
+
+  const [purchaseCompleted, setPurchaseCompleted] = useState(false);
+
+  const onAdd = (num) => {
+    setPurchaseCompleted (true);
+    
+  }
+
     return(
         <div class="card mb-3 text-center" /*style="max-width: 540px;"*/>
   <div class="row g-0">
@@ -19,21 +24,16 @@ export const ItemDetail = ({
         <h5 class="card-title">{name}</h5>
         <p class="card-text">${price}</p>
         <p class="card-text mx-5">{details}</p>
-        <p>Stock</p>
-        <p>0</p>
-         {/*<p>Productos Agregados al carrito: {num} Unidades</p>*/}
-                        
-                        {/*<button type="button" className="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark" onClick={vaciar}>Vaciar</button>*/}
-                        
-            
-        <div>
-        <button className='btn btn-primary mx-1'>+</button><button className='btn btn-danger mx-1'>-</button>
+        <p><strong>Stock Disponible:</strong> {stock}</p>
+        
+        
+         {purchaseCompleted ? (<Link to='/cart'><button type="button" className='btn btn-success mt-3'>Ir al Carrito</button></Link>)
+         :(<ItemCount ItemDetail={stock} onAdd={onAdd}/>)} 
         </div>
-          <button type="button" className='btn btn-success mt-3'>Comprar Producto</button>
       </div>
     </div>
   </div>
-</div>
+
     );
 };
 

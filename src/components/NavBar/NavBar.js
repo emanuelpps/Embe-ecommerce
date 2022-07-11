@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
