@@ -1,13 +1,13 @@
 import './ItemCount.css';
-import { useState, useEffect } from "react";
+import {useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 
 
 
 
-export const ItemCount = ({ onAdd }) => {
+export const ItemCount = ({ onAdd, stock }) => {
 
-let stock = 3;
+
   
   const [num, setNum] = useState(1);
 

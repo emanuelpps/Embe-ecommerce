@@ -19,7 +19,7 @@ export const data = [
 },
 {
     id:'3',
-    name:'ALMOHADON TUSOR GRIS OSCURO GRUESO',
+    name:'ALMOHADON TUSOR GRIS GRUESO',
     category:'Living',
     price:2900,
     details:'Almohadón de tusor composicion 100% algodon de 57 x 40 cms con relleno.Funda lavable.',
@@ -46,7 +46,7 @@ export const data = [
 },
 {
     id:'6',
-    name:'DIFUSOR AMBIENTAL HOME COLLECTION',
+    name:'DIFUSOR AMBIENTAL',
     category:'Living',
     price:2500,
     details:'Difusor ambiental de 2O0 mls con varas bambú cuyos microcapilares distribuyen la fragancia hasta el exterior para que el perfume comience a desprenderse. Un difusor logra aromatizar de forma permanente ambientes de 15/20 mts2. Duración estimada de dos a tres meses.',

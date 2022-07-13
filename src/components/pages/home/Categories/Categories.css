@@ -1,0 +1,19 @@
+.cardCenter{
+    justify-content: center;
+    align-items: center;
+}
+
+.cardStyle {
+    
+    width: 350px;
+    height: 600px;
+    border-radius: 3px;
+    color: #F9F9F9;
+    padding: 16px;
+    transition: all .3s;
+   }
+   
+   .cardStyle:hover {
+    margin-top: -30px;
+   }
+   
