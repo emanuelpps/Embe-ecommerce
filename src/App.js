@@ -19,11 +19,11 @@ function App() {
       <Header/>
       <NavBar/>
       <Routes>
+          <Route exact path= "/cart" element={<Cart/>}></Route>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/category/:catId" element={<ItemListContainer />}></Route>
           <Route path="/product/:itemId" element={<ItemDetailContainer/>}></Route>
-          <Route path="*" element={<Navigate to="/" />} />
-          <Route path= "/cart" element={<Cart/>}> </Route>
+          <Route path="*" element={<Navigate to="/"/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

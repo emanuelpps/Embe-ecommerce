@@ -1,5 +1,5 @@
 import React from 'react'
-import CartItem from './CartItem';
+import CartList from './CartList';
 
 const Cart = () => {
 
@@ -7,9 +7,9 @@ const Cart = () => {
     return (
         <main className="text-center">
             <h1>Carrito de compras</h1>
-            <CartItem/>
+            <CartList />
         </main>
-    )
-}
+    );
+};
 
 export default Cart;
