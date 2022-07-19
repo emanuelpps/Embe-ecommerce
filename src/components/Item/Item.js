@@ -1,10 +1,11 @@
-import React from 'react';
 import './Item.css';
 import { Link } from 'react-router-dom';
-//import { useCart } from '../Context/CartContext'
+//import { useContext } from 'react';
 
 export const Item = ({ id, name, price, img, category, }) =>{
-  //const cart = useCart();
+
+  //const cartContext = useContext;
+  //const {cart, addToCart} = cartContext
 
     return(    
             

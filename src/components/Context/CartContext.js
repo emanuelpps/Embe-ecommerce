@@ -8,13 +8,13 @@ export const CartProvider = ({defaultValue = [], children}) =>{
 
     const [cart, setCart] = useState(defaultValue);
 
-    const addToCart = (data, quantity) => {
+    const addToCart = (data, num) => {
         console.log(data)
         if(isInCart(data.id)){
             const newCart = [...cart]
             for (const element of newCart) {
                 if (element.data.id === data.id){
-                    element.quantity = element.quantity + quantity;
+                    element.num = element.num + num;
                 }
             }
             setCart(newCart);
@@ -23,7 +23,7 @@ export const CartProvider = ({defaultValue = [], children}) =>{
             setCart ([
                 ...cart, {
                     data: data,
-                    quantity: quantity
+                    quantity: num
                 }
             ])
         }
@@ -31,7 +31,7 @@ export const CartProvider = ({defaultValue = [], children}) =>{
     }
 
     const isInCart = (id) => {
-        return cart.find((element) => element.item.id === id)
+        return cart.find((element) => element.data.id === id)
     }
 
     const removeFromCart = (id) =>{

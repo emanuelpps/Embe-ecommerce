@@ -29,8 +29,8 @@ export const ItemDetail = ({id,name,price,details,img,stock,}) => {
                   <p class="card-text">${price}</p>
                   <p class="card-text mx-5">{details}</p>
                   <p><strong>Stock Disponible:</strong> {stock}</p>
-                  {purchaseCompleted ? (<Link to='/cart'><button type="button" className='btn btn-success mt-3'>Ir al Carrito</button></Link>)
-                  :(<ItemCount stock={stock} onAdd={onAdd}/>)} 
+                  {purchaseCompleted ? (<Link to='/cart' /*element={<Cart onAdd={onAdd}/>}*/><button type="button" className='btn btn-success mt-3' onClick={() => onAdd ()}>Ir al Carrito</button></Link>)
+                  :(<ItemCount stock={stock} onAdd={onAdd} />)}
                </div>
               </div>
             </div>
@@ -38,5 +38,6 @@ export const ItemDetail = ({id,name,price,details,img,stock,}) => {
 
     );
 };
+
 
 export default ItemDetail;

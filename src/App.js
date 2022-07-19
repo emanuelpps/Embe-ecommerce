@@ -5,9 +5,10 @@ import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import { ItemDetailContainer } from 'components/ItemDetailContainer/ItemDetailContainer';
 import {ItemListContainer} from 'components/ItemListContainer/ItemListContainer';
-import {Cart} from 'components/Cart/Cart';
+import Cart from './components/Cart/Cart';
 import { CartProvider } from './components/Context/CartContext';
 import Home from './components/pages/home/Home';
+import Footer from 'components/Footer/Footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
           <Route path= "/cart" element={<Cart/>}> </Route>
       </Routes>
+      <Footer/>
       </BrowserRouter>
       </CartProvider>
     </div>

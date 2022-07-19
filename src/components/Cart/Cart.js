@@ -1,9 +1,15 @@
-import './Cart.css';
+import React from 'react'
+import CartItem from './CartItem';
 
-export const Cart = () => {
-  return (
-    <h1 className='text-center'> Carrito de Compras</h1>
-  );
+const Cart = () => {
+
+
+    return (
+        <main className="text-center">
+            <h1>Carrito de compras</h1>
+            <CartItem/>
+        </main>
+    )
 }
 
 export default Cart;
