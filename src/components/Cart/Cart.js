@@ -6,7 +6,9 @@ const Cart = () => {
 
     return (
         <main className="text-center">
-            <h1>Carrito de compras</h1>
+            <div className='Header'>
+                <h3 className='Cart-Heading'>Carrito de Compras</h3>
+                </div>
             <CartList />
         </main>
     );
