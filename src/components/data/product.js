@@ -1,4 +1,4 @@
-export const data = [
+/*export const data = [
     {
         id:'1',
         name:'ALMOHADON FLECOS',
@@ -145,4 +145,4 @@ export const data = [
 },
 ];
 
-export default data;
+export default data;*/

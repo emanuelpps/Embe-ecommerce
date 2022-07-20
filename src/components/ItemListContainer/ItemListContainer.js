@@ -3,6 +3,10 @@ import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 import {data}  from '../data/product';
 import {useParams} from 'react-router-dom';
+import { getProducts } from '../../services/firestore';
+
+
+ 
 
 
 export const ItemListContainer = () => {
@@ -14,24 +18,17 @@ export const ItemListContainer = () => {
     const{catId} = useParams();
 
     useEffect(()=>{
-        setLoading(true);
-        const getItems = new Promise((resolve) => {
-          setTimeout(() => {
-            const info = catId
-            ? data.filter((item) => item.category === catId)
-            : data;
-
-            resolve (info);
-          }, 1000);
-        });
-
-
-        getItems
-        .then((res) => {
-          setItem(res);
+        getProducts().then ((data) =>{
+          setLoading(false);
+          setItem(data);
         })
-        .finally(() => setLoading(false));
-      }, [catId]);
+        .catch((errorMsg)=> {
+          console.error(errorMsg);
+        })
+      },
+      [catId]
+    );
+      
 
 return loading ? (
   <div class="text-center">
