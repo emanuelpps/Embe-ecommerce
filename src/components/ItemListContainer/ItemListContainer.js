@@ -1,7 +1,7 @@
 import './ItemListContainer.css';
 import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
-import {data}  from '../data/product';
+//import {data}  from '../data/product';
 import {useParams} from 'react-router-dom';
 import { getProducts } from '../../services/firestore';
 
@@ -18,7 +18,8 @@ export const ItemListContainer = () => {
     const{catId} = useParams();
 
     useEffect(()=>{
-        getProducts().then ((data) =>{
+        getProducts()
+        .then ((data) =>{
           setLoading(false);
           setItem(data);
         })

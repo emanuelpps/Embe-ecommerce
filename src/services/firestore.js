@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, doc, getDocs, getDoc } from "firebase/firestore";
+import { getFirestore, collection, doc, getDocs, getDoc, query, where } from "firebase/firestore";
 
 
 
@@ -31,7 +31,7 @@ export async function getProducts(){
   const productsCollectionRef = collection(db, "products");
   const docSnapshot = await getDocs(productsCollectionRef);
 
-  const dataProducts = docSnapshot.docs.map( item => {
+  const dataProducts = docSnapshot.docs.map((item) => {
     const product = {
       ...item.data(),
       id: item.id
@@ -45,13 +45,32 @@ export async function getProducts(){
 
 
 
-export async function getProduct(id){
+export async function getProduct(itemId){
   const productsCollectionRef = collection(db, "products");
-  const docRef = doc(productsCollectionRef, id);
+  const docRef = doc(productsCollectionRef, itemId);
 
   const docSnapshot = await getDoc(docRef);
 
-  return docSnapshot.data();
+
+  return {...docSnapshot.data(), id: docSnapshot.id};
 }
 
 
+export async function getProductsByCategory(catId){
+  const productsCollectionRef = collection(db, "products");
+  const q = query(productsCollectionRef, where("category", "==", catId));
+
+  const querySnapshot = await getDocs (catId);
+  querySnapshot.forEach((doc) =>{
+    const productCategory = {
+      ...doc.data(),
+      id: doc.id,
+      category: doc.category
+    }
+    return productCategory;
+    
+});
+
+  
+    return q
+  }

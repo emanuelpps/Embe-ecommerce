@@ -9,7 +9,7 @@ const CartItem = ({product, quantity, removeFromCart, id, clearCart} ) => {
 
     return (
         <article className="">
-            <section class="h-100"  alt=''>
+           <section class="h-100"  alt=''>
             <div class="container h-100 py-5">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-10">
@@ -42,10 +42,10 @@ const CartItem = ({product, quantity, removeFromCart, id, clearCart} ) => {
                             <input id="form1" min="0" name="quantity" value={quantity} type="number"
                             class="form-control form-control-sm" />
 
-                            <button class="btn btn-link px-2"
-                            /* onclick="this.parentNode.querySelector('input[type=number]').stepUp()"*/>
-                            <i class="fas fa-plus"></i>
-                            </button>
+{/*<button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"/>
+                            <i class="fas fa-plus"/></i>
+                            </button>*/}
                         </div>
                         <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                             <h5 class="mb-0">${product.price}</h5>
@@ -69,7 +69,7 @@ const CartItem = ({product, quantity, removeFromCart, id, clearCart} ) => {
 
 
 
-            {/*<div className="cart-item__delete" onClick={()=>removeFromCart(id)}>
+{/*<div className="cart-item__delete" onClick={()=>removeFromCart(id)}>
                 X
             </div>
             <div className="cart-item__img">

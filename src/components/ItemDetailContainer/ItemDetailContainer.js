@@ -14,14 +14,16 @@ export const ItemDetailContainer = () => {
   useEffect(() => {
     setLoading(true);
     getProduct(itemId)
-    .then((Promise) =>{
-      setProduct(Promise);
+    .then((productPromise) =>{
+      setProduct(productPromise);
     })
     .catch((errorMsg) => {
       console.error(errorMsg);
     })
     .finally(() => setLoading(false));
-      }, [itemId]);
+    }, 
+    [itemId]
+  );
   
     
     
