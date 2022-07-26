@@ -1,41 +1,33 @@
-import React, { useContext } from 'react'
-import  {CartContext} from '../Context/CartContext';
-import CartItem from './CartItem';
+import React from 'react'
+//import  {CartContext} from '../Context/CartContext';
+
 import './Cart.css';
+//import BuyingForm from 'components/BuyingForm/BuyingForm';
 
-const CartList = () => {
-
-    const cartContext = useContext(CartContext);
-    const { cart, removeFromCart, clearCart } = cartContext;
+const CartList = ({id , name, quantity, price, img , removeFromCart }) => {
 
     return (
-        <section className="list-cart-container">
-            {cart ? (
-                cart.map((product) => {
-                return(
-                    <CartItem  
-                        product={product.data}
-                        key={product.data.id}
-                        quantity ={product.quantity} 
-                        removeFromCart={removeFromCart}
-                        clearCart={clearCart}
-                        />
-                    );
-                    })
-                ) : ( 
-                <div class="text-center">
-                    <div className='spinner-border' role="status">
-                    <span className='visually-hidden'>Loading...</span>
-                    </div>
+        <>
+            <div className="cart-item ">
+                <button className="material-icons delete-item item" onClick={()=>removeFromCart(id)}>X</button>
+                <div  className="item-img item" style={{backgroundImage: `url(${img})`}}>
                 </div>
-            )}
-            {cart.length ? (
-                <button  className="Action"  onClick={clearCart}>Vaciar Carrito</button>
-            ) : (
-            <p>No hay productos en el carrito</p>
-            )}
-        </section>
-    );
-};
+                <div className="item-name item">
+                    {name}
+                </div>
+                <div className="item-quantity item">
+                    {quantity}
+                </div>
+                <div className="item-value item">
+                    $ {price}
+                </div>
+                <div className="item-totalValue item">
+                    $ {quantity * price}
+                </div> 
+            </div>
+            <hr/> 
+        </>
+    )
+}
 
 export default CartList

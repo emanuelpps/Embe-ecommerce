@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, doc, getDocs, getDoc, query, where } from "firebase/firestore";
+import { getFirestore, collection, doc, getDocs, getDoc, query, where, Timestamp, addDoc } from "firebase/firestore";
 
 
 
@@ -23,9 +23,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const  db = getFirestore(app);
 
-export function testDB(){
+/* export function testDB(){
   console.log(db);
-}
+} */
 
 export async function getProducts(){
   const productsCollectionRef = collection(db, "products");
@@ -58,19 +58,29 @@ export async function getProduct(itemId){
 
 export async function getProductsByCategory(catId){
   const productsCollectionRef = collection(db, "products");
-  const q = query(productsCollectionRef, where("category", "==", catId));
+  const q = query(productsCollectionRef, catId, where("category", "==", catId));
 
-  const querySnapshot = await getDocs (catId);
-  querySnapshot.forEach((doc) =>{
+  const querySnapshot = await getDocs (q);
+  
+  querySnapshot.forEach((item) =>{
     const productCategory = {
-      ...doc.data(),
-      id: doc.id,
-      category: doc.category
+      ...item.data(),
+      id: item.id,
+      category: item.category
     }
     return productCategory;
     
-});
+})};
+
+export async function buyingOrder(order){
+  const dataTiemStamp = Timestamp.now();
+  const orderDate = {
+    ...order,
+    date: dataTiemStamp
+  };
+  const ordersCollectionRef = collection(db,'orders');
+  const orderDoc = await addDoc(ordersCollectionRef, orderDate);
+  return orderDoc.id;
+}
 
   
-    return q
-  }

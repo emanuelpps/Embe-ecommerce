@@ -1,5 +1,5 @@
 import React from 'react'
-import CartList from './CartList';
+import CartItem from './CartItem';
 
 const Cart = () => {
 
@@ -9,7 +9,7 @@ const Cart = () => {
             <div className='Header'>
                 <h3 className='Cart-Heading'>Carrito de Compras</h3>
                 </div>
-            <CartList />
+            <CartItem />
         </main>
     );
 };

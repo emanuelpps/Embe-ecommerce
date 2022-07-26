@@ -15,7 +15,7 @@ export const Item = ({ id, name, price, img, category, }) =>{
                 <div class="card-body">
                   <h5 class="card-title titleText" alt={category}>{name}</h5>
                   <p class="card-text priceText">${price}</p>
-                  <Link to={`/product/${id}`}><button type="button" className="btn btn-color flex-fill ms-1">Ver detalle de producto</button></Link>
+                  <Link to={`/product/${id}`}><button type="button" className="btn btn-color flex-fill ms-1">Ver Producto</button></Link>
                 </div>
               </div>
                 </div>
