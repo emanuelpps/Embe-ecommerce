@@ -9,7 +9,7 @@ const HomeInspiration = () => {
             <div class= 'containerHomeInspiration'>
                 <div class= 'cardHomeInspiration'>
                 <div class= 'image'>
-                    <img src='/img/Home-inspiration-1.jpg' alt=''/>
+                    <img src='https://i.postimg.cc/6Q8mt28m/Home-inspiration-1.jpg' alt=''/>
                 </div>
                 <div class= 'content'>
                     <h3>HOME DREAMS</h3>
@@ -20,7 +20,7 @@ const HomeInspiration = () => {
             <div class= 'containerHomeInspiration'>
                 <div class= 'cardHomeInspiration'>
                 <div class= 'image'>
-                    <img src='/img/Home-inspiration-2.jpg' alt=''/>
+                    <img src='https://i.postimg.cc/kMQhJd5q/Home-inspiration-2.jpg' alt=''/>
                 </div>
                 <div class= 'content'>
                     <h3>HOME WINTER</h3>
