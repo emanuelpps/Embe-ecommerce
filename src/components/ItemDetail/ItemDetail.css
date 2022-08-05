@@ -1,3 +1,11 @@
 .cardDetail{
     max-width: 840px;
 }
+
+.btn-color{
+    background-color: #e6c2a8;
+}
+
+.card-price{
+    font-weight: 900;
+}

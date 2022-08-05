@@ -5,13 +5,16 @@ import './Cart.css';
 import  {CartContext} from '../Context/CartContext';
 import { Link } from 'react-router-dom';
 import CartList from './CartList';
-//import BuyingForm from 'components/BuyingForm/BuyingForm';
-//import BuyingForm from 'components/BuyingForm/BuyingForm';
+import { createBuyOrder } from "../../services/firestore";
+import Checkout from 'components/Checkout/Checkout';
+
+
 
 
 const CartItem = () => {
 
-    const { cart, total, removeFromCart, getTotal}= useContext(CartContext);
+    const { cart, /*total*/ removeFromCart,  totalPrice,clearCart}= useContext(CartContext);
+    
 
     if (cart.length !== 0) {
 
@@ -28,19 +31,16 @@ const CartItem = () => {
                     </div>
                     <div className="cart-items">
                         {
-                            cart.map( ({ item, name, quantity, price, img, total }) =>(
-                                <CartList key={item} item={item} name={name} quantity={quantity} price={price} img={img} total={total} removeFromCart={removeFromCart}  />
+                            cart.map( ({ id, item, name, quantity, price, img, total }) =>(
+                                <CartList key={item} id={id} name={name} quantity={quantity} price={price} img={img} total={total} removeFromCart={removeFromCart}  />
                             ))
                         }
                     </div>
                     <div className="cart-total">
                         <p className="total-amount">
-                        Subtotal ${ getTotal }
+                        Subtotal $ {totalPrice()} 
                         </p>
-                        <Link to="/checkout" /* element={
-                            cart.map( ({ item, name, quantity, price, total }) =>(
-                                <BuyingForm  item={item} name={name} quantity={quantity} price={price} total={total}/>
-                            ))} */ className="waves-effect btn">Finalizar compra</Link>
+                        <Link to="/checkout" element={<Checkout cart={cart} totalPrice={totalPrice} clearCart={clearCart} createBuyOrder={createBuyOrder}/>} className="waves-effect btn">Finalizar compra</Link>
                     </div>
                 </div>
             </div>

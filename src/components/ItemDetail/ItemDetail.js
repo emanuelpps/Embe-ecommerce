@@ -13,7 +13,7 @@ export const ItemDetail = ({id,name,price,details,img,stock,}) => {
 
   const onAdd = (num) => {
     setPurchaseCompleted (true);
-    addToCart ({id, name, price, details, img, stock}, num)
+    addToCart ({ id, name, price, details, img, stock}, num)
   };
 
 
@@ -26,12 +26,15 @@ export const ItemDetail = ({id,name,price,details,img,stock,}) => {
                 <div class="col-md-8">
                   <div class="card-body">
                   <h5 class="card-title">{name}</h5>
-                  <p class="card-text">${price}</p>
+                  <p class="card-text card-price">${price}</p>
                   <p class="card-text mx-5">{details}</p>
                   <p><strong>Stock Disponible:</strong> {stock}</p>
-                  {purchaseCompleted ? (<Link to='/cart' /*element={<Cart onAdd={onAdd}/>}*/><button type="button" className='btn btn-success mt-3' onClick={() => onAdd ()}>Ir al Carrito</button></Link>)
+                  {purchaseCompleted ? (<Link to='/cart' /*element={<Cart onAdd={onAdd}/>}*/><button type="button" className='btn btn-success mt-3 mb-3' onClick={() => (onAdd)}>Ir al Carrito</button></Link>)
                   :(<ItemCount stock={stock} onAdd={onAdd} />)}
-               </div>
+              </div>
+              <div>
+                <Link to="*"><button type='button' className='btn btn-color'>Volver</button></Link>
+              </div>
               </div>
             </div>
   </div>

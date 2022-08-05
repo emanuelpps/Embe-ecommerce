@@ -29,6 +29,8 @@ function NavBar() {
                 <li><Link class="dropdown-item" to='/category/Cuarto'>Cuarto</Link></li>
                 <li><Link class="dropdown-item" to='/category/Cocina'>Cocina</Link></li>
                 <li><Link class="dropdown-item" to='/category/Bano'>Baño</Link></li>
+                <hr/>
+                <li><Link class="dropdown-item" to='/all-products'>Todos los Productos</Link></li>
               </ul>
             </li>
             <li class="nav-item">

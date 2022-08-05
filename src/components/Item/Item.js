@@ -14,15 +14,11 @@ export const Item = ({ id, name, price, img, category, }) =>{
                 <img src={img} class="card-img-top" alt="..."/>
                 <div class="card-body">
                   <h5 class="card-title titleText" alt={category}>{name}</h5>
-                  <p class="card-text priceText">${price}</p>
-                  <Link to={`/product/${id}`}><button type="button" className="btn btn-color flex-fill ms-1">Ver Producto</button></Link>
+                  <p class="card-text price-font priceText">${price}</p>
+                  <Link to={`/product/${id}`}><button type="button" className="btn btn-color btn-font flex-fill ms-1">Ver Producto</button></Link>
                 </div>
               </div>
                 </div>
-            
-  
-  
-                     
     );
 };
 

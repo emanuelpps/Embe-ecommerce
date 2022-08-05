@@ -10,7 +10,7 @@ export const ItemDetailContainer = () => {
   const [loading, setLoading] = useState(true);
 
   const { itemId } = useParams();
- 
+
   useEffect(() => {
     setLoading(true);
     getProduct(itemId)
@@ -52,5 +52,5 @@ export const ItemDetailContainer = () => {
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
-     : <ItemDetail {...product} />;
+    : <ItemDetail {...product} />;
 };

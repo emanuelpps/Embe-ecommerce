@@ -4,12 +4,12 @@ import React from 'react'
 import './Cart.css';
 //import BuyingForm from 'components/BuyingForm/BuyingForm';
 
-const CartList = ({id , name, quantity, price, img , removeFromCart }) => {
+const CartList = ({id,item, name, quantity, price, img , removeFromCart }) => {
 
     return (
         <>
             <div className="cart-item ">
-                <button className="material-icons delete-item item" onClick={()=>removeFromCart(id)}>X</button>
+                <button className="material-icons delete-item item"  onClick={() => removeFromCart(name)}>X</button>
                 <div  className="item-img item" style={{backgroundImage: `url(${img})`}}>
                 </div>
                 <div className="item-name item">

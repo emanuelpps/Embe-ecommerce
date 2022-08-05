@@ -1,17 +1,18 @@
-import { createContext, useState } from "react";
+import { useContext,createContext, useState } from "react";
 
 export const CartContext = createContext({});
 
 const { Provider } = CartContext;
 
 
+const useCartContext = () => useContext(CartContext);
 
 
 export const CartProvider = ({defaultValue = [], children}) =>{
 
     const [cart, setCart] = useState(defaultValue);
     const [items, setItems] = useState(0);
-    //const [total, setTotal] = useState(0);
+    const [total, setTotal] = useState(0);
 
     const addToCart = (data, num) => {
         console.log(data)
@@ -38,41 +39,52 @@ export const CartProvider = ({defaultValue = [], children}) =>{
     }
 
 
-const isInCart = (id) => {
-        return cart.find((element) => element.data.id === id)
-    }
+    const isInCart = (itemName)=> {
+        const isIn = cart.find(product => product.item === itemName);
 
-    const updateItems = ()=>{
+        return isIn;
+    };
+
+    /* const updateItems = ()=>{
         let total = cart.reduce(( acc,element) => acc  + element.quantity, 0);
         setItems(total);
-    };
+    }; */
 
-    const getProductsFromCart = (id) => {
-        return cart.find((element) => element.id === id);
-    };
+    //const getProductsFromCart = (id) => {
+      //  return cart.find((element) => element.id === id);
+    //};
 
-    const getItemQuantity = (id) => {
+    /* const getItemQuantity = (id) => {
         const data = getProductsFromCart(id);
         return data ? data.num : 0;
-    };
+    }; */
 
 
     const getTotal = () => {
-        let total = 0;
-        cart.map((i) => total += i.price * i.num);
-        return total;
+        const sumalize = cart.reduce( (acc, prod) => acc + prod.price * prod.quantity, 0 );
+        setTotal(sumalize);
     };
 
     function getTotalProducts() {
         let quantity = 0;
-        cart.map(i => quantity += i.num);
+        cart.map(i => quantity += i.quantity);
         return quantity;
     }
 
-    const removeFromCart = (id) =>{
-        const newCart = [...cart].filter(element => element.data.id !== id);
-        setCart(newCart)
+    function totalPrice() {
+        let total = 0;
+        cart.map ( (i) => total += i.price * i.quantity );
+        return total;
     }
+
+    const removeFromCart = (name) =>{
+        const newCart = [...cart];
+        const cartFilter = newCart.filter(item =>{
+            return item.name !== name;
+        });
+        setCart(cartFilter)
+    }
+    
 
     const clearCart = () =>{
         setCart([]);
@@ -83,13 +95,15 @@ const isInCart = (id) => {
         clearCart,
         addToCart,
         isInCart,
-        getProductsFromCart,
-        getItemQuantity,
+        //getProductsFromCart,
+        //getItemQuantity,
         items,
-        updateItems,
+        //updateItems,
+        total,
         getTotal,
         getTotalProducts,
         removeFromCart,
+        totalPrice
     }
 
     return(
@@ -98,3 +112,4 @@ const isInCart = (id) => {
         </Provider>
     )
 };
+export default useCartContext;

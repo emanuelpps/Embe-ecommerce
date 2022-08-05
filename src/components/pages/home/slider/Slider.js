@@ -1,3 +1,4 @@
+import { ItemListContainer } from 'components/ItemListContainer/ItemListContainer';
 import './Slider.css';
 
 const slider = () =>{

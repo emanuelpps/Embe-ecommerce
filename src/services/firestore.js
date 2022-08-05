@@ -1,3 +1,5 @@
+
+import "firebase/firestore";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, getDocs, getDoc, query, where, Timestamp, addDoc } from "firebase/firestore";
@@ -27,6 +29,8 @@ const  db = getFirestore(app);
   console.log(db);
 } */
 
+
+// obtenemos la lista completa de productos de firebase
 export async function getProducts(){
   const productsCollectionRef = collection(db, "products");
   const docSnapshot = await getDocs(productsCollectionRef);
@@ -44,7 +48,7 @@ export async function getProducts(){
 }
 
 
-
+// obtenemos productos individualmente
 export async function getProduct(itemId){
   const productsCollectionRef = collection(db, "products");
   const docRef = doc(productsCollectionRef, itemId);
@@ -56,6 +60,7 @@ export async function getProduct(itemId){
 }
 
 
+// obtenemos productos por categoria
 export async function getProductsByCategory(catId){
   const productsCollectionRef = collection(db, "products");
   const q = query(productsCollectionRef, catId, where("category", "==", catId));
@@ -72,15 +77,22 @@ export async function getProductsByCategory(catId){
     
 })};
 
-export async function buyingOrder(order){
-  const dataTiemStamp = Timestamp.now();
-  const orderDate = {
-    ...order,
-    date: dataTiemStamp
+
+//creamos el buy order del cliente con fecha y hora y lo almacenamos dentro de firebase
+export async function createBuyOrder(dataOrder){
+  const ordersCollectionRef = collection(db, "orders");
+  const dataTimeStamp = Timestamp.now();
+
+  const dataOrderWithDate = {
+    ...dataOrder,
+    date: dataTimeStamp,
   };
-  const ordersCollectionRef = collection(db,'orders');
-  const orderDoc = await addDoc(ordersCollectionRef, orderDate);
-  return orderDoc.id;
+
+  const orderCreated = await addDoc(ordersCollectionRef, dataOrderWithDate);
+
+  return orderCreated
 }
 
-  
+export default db;
+
+

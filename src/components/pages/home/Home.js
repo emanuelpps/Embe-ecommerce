@@ -1,4 +1,3 @@
-import { ItemListContainer } from 'components/ItemListContainer/ItemListContainer';
 import './Home.css';
 import Slider from './slider/Slider';
 import Categories from './Categories/Categories'
@@ -12,7 +11,6 @@ const Home = () =>{
         <Slider/>
         <Categories/>
         <HomeInspiration/>
-        <ItemListContainer/>
         </>
     )
 }

@@ -1,3 +1,11 @@
+.btn-font{
+    font-weight: 700;
+}
+
+.price-font{
+    font-weight: 900;
+}
+
 .textDecoration{
     text-decoration: none;
 }

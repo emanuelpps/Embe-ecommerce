@@ -12,10 +12,11 @@ export const ItemListContainer = () => {
 
     const[loading, setLoading] = useState(true);
 
+    
     const{catId} = useParams();
 
 
-    
+
     const loadingProducts = (catId) =>{
     if (catId === undefined){
       return (getProducts());
@@ -49,8 +50,8 @@ export const ItemListContainer = () => {
             </div>
           </div>
           ) : (
-            <section className='text-center'>
-            <h3>Catalogo de Productos</h3>
+            <section className='text-center mt-5'>
+            <h3 className='mb-5'>Catalogo de Productos</h3>
             <article>  
               {
                   <ItemList items={ items.filter(product => product.category === `${catId}`) } />
@@ -68,10 +69,7 @@ export const ItemListContainer = () => {
           ) : (
             <section className='text-center'>
             <h3>Catalogo de Productos</h3>
-            {/* agregar button -> VER TODOS LOS PRODUCTOS */}
-            <article>    
-                  <ItemList items={items} />
-                  </article>
+            <ItemList items={items} category={catId}/>
             </section>
           )
       }}
