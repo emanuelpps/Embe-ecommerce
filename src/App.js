@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header/Header';
 /*import ItemCount from './components/ItemCount';*/
 import NavBar from './components/NavBar/NavBar';
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <CartProvider>
-      <BrowserRouter>
+      <HashRouter>
       <Header/>
       <NavBar/>
       <Routes>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/contacto" element={<Contacto/>}></Route>
       </Routes>
       <Footer/>
-      </BrowserRouter>
+      </HashRouter>
       </CartProvider>
     </div>
   );
