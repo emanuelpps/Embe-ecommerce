@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container">
-        <Link to='/'><img src="/img/Embe_logo.png" className="logo"/></Link>
+        <Link to='/'><img src="https://i.ibb.co/Px7yY28/Embe-logo.png" className="logo"/></Link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

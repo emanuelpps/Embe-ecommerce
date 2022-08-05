@@ -1,4 +1,4 @@
-import { ItemListContainer } from 'components/ItemListContainer/ItemListContainer';
+//import { ItemListContainer } from 'components/ItemListContainer/ItemListContainer';
 import './Slider.css';
 
 const slider = () =>{
@@ -9,13 +9,13 @@ const slider = () =>{
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./img/Embe-logo-slide.png" class="d-block w-100" alt="..."/>
+      <img src="https://i.postimg.cc/k4KLLSSQ/Embe-logo-slide.png" class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="./img/Amalfi-gris-banner-min.gif" class="d-block w-100" alt="..."/>
+      <img src="https://i.postimg.cc/q7CFCKjP/Amalfi-gris-banner-min.gif" class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="./img/Cuotas2-banner-min.png" class="d-block w-100" alt="..."/>
+      <img src="https://i.postimg.cc/PxWFSjGK/Cuotas2-banner-min.png" class="d-block w-100" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
