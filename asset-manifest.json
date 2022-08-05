@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/embe-ecommerce/static/css/main.d4c456a0.css",
-    "main.js": "/embe-ecommerce/static/js/main.c39f0934.js",
+    "main.js": "/embe-ecommerce/static/js/main.61511c9e.js",
     "static/js/787.0fdc6b9b.chunk.js": "/embe-ecommerce/static/js/787.0fdc6b9b.chunk.js",
     "index.html": "/embe-ecommerce/index.html",
     "main.d4c456a0.css.map": "/embe-ecommerce/static/css/main.d4c456a0.css.map",
-    "main.c39f0934.js.map": "/embe-ecommerce/static/js/main.c39f0934.js.map",
+    "main.61511c9e.js.map": "/embe-ecommerce/static/js/main.61511c9e.js.map",
     "787.0fdc6b9b.chunk.js.map": "/embe-ecommerce/static/js/787.0fdc6b9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4c456a0.css",
-    "static/js/main.c39f0934.js"
+    "static/js/main.61511c9e.js"
   ]
 }
