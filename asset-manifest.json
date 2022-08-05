@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Embe-Ecommerce/static/css/main.d4c456a0.css",
+    "main.js": "/Embe-Ecommerce/static/js/main.e6a33d22.js",
+    "static/js/787.17140287.chunk.js": "/Embe-Ecommerce/static/js/787.17140287.chunk.js",
+    "index.html": "/Embe-Ecommerce/index.html",
+    "main.d4c456a0.css.map": "/Embe-Ecommerce/static/css/main.d4c456a0.css.map",
+    "main.e6a33d22.js.map": "/Embe-Ecommerce/static/js/main.e6a33d22.js.map",
+    "787.17140287.chunk.js.map": "/Embe-Ecommerce/static/js/787.17140287.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4c456a0.css",
+    "static/js/main.e6a33d22.js"
+  ]
+}
