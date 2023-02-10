@@ -10,7 +10,7 @@
 https://i.ibb.co/L9DRwyy/Embe-Proceso-De-Compra.gif
 
 
-Proyecto ficticio de e-commerce para el curso de ReactJS de CoderHouse.
+Proyecto ficticio de e-commerce para el curso de ReactJS de CoderHouse (version DESKTOP).
 
 En este proyecto creamos varios componentes con el objetivo de construir un sitio e-commerce funcional. Los componentes centrales para el desarrollo de la funcionalidad son: ItemListContainer, ItemList, Item, ItemDetailContainer, ItemDetail, Cart, CartWidget, CartContext, NavBar, ItemCount.
 ##
