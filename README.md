@@ -5,7 +5,7 @@
 
 # EMBÉ - Deco + Design
 
-https://emanuelpps.github.io/Embe-ecommerce/
+https://emanuelpps.github.io/embe-ecommerce/
 
 ## Proceso de Compra
 
