@@ -25,7 +25,7 @@ function App() {
       <NavBar/>
       <Routes>
           <Route exact path= "/cart" element={<Cart/>}></Route>
-          <Route path="/embe-ecommerce" element={<Home/>}></Route>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/category/:catId" element={<ItemListContainer />}></Route>
           <Route path="/all-products" element={<ItemListContainer />}></Route>
           <Route path="/product/:itemId" element={<ItemDetailContainer/>}></Route>
