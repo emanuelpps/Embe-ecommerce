@@ -10,7 +10,7 @@ https://emanuelpps.github.io/embe-ecommerce/
 ## Proceso de Compra
 
 <div align="center" margin-top: "300px">
-<img src="https://i.ibb.co/L9DRwyy/Embe-Proceso-De-Compra.gif" align="center" height="200" width="300" />
+<img src="https://i.ibb.co/L9DRwyy/Embe-Proceso-De-Compra.gif" align="center" height="300" width="600" />
 </div>  
 
 
